@@ -13,7 +13,7 @@ job_config = bigquery.LoadJobConfig(
 )
 
 df = pd.read_csv("datasets/GlobalWeatherRepository.csv")
-job = job = client.load_table_from_dataframe(df, table_id, job_config=job_config)
+job = client.load_table_from_dataframe(df, table_id, job_config=job_config)
 
 job.result()
 
